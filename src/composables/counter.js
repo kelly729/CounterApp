@@ -21,7 +21,12 @@ export default function useCounter(){
 
   
   const setCount=()=>{
+   if(inputValue.value){
     count.value=inputValue.value
+    inputValue.value=""
+   
+   }
+
 
   }
   const addTocount=(number)=>{
